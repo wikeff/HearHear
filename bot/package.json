@@ -1,0 +1,39 @@
+{
+  "name": "hearhear-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot that records and transcribes meetings.",
+  "main": "dist/bot.js",
+  "scripts": {
+    "start": "npm run build && node dist/bot",
+    "lint": "prettier --cache --check . && eslint src --ext mjs,js,ts --cache",
+    "format": "prettier --cache --write . && eslint src --ext mjs,js,ts --fix --cache",
+    "build": "rimraf dist && tsc",
+    "build:check": "tsc --noEmit --incremental false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoodluckH/HearHear.git"
+  },
+  "keywords": [
+    "Discord",
+    "bot"
+  ],
+  "author": "Xipu Li, Nataliya Karmarkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoodluckH/HearHear/issues"
+  },
+  "homepage": "https://github.com/GoodluckH/HearHear#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-react": "^7.34.1",
+    "prettier": "3.2.5",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.2"
+  }
+}
