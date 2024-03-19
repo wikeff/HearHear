@@ -26,3 +26,5 @@ audio files.
 
 To prevent the buffer from growing too large, a timer is used to end and
 re-record the stream every 30 seconds.
+
+dyld[]: missing symbol called error: https://gist.github.com/adrienjoly/e29a6e73fb7e701eefd80ff9bde9abeb
